@@ -6,6 +6,7 @@ target/
 !**/mvn/
 .*
 mvnw.*
+mvnw
 
 ### STS ###
 .apt_generated
