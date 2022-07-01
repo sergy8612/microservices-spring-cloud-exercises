@@ -6,3 +6,7 @@ spring:
           uri: https://github.com/sergy8612/ConfigData
 server:
   port: 8001
+# This controls which Actuator web endpoints are exposed.
+# Ordinarily, only /actuator/health and /actuator/info are exposed,
+# But we need to allow external parties to POST to /actuator/busrefresh:
+management.endpoints.web.exposure.include: health,info,bus-refresh
